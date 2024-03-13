@@ -18,15 +18,15 @@ export default async function Home({
     <main className="flex min-h-screen bg-cover py-20 bg-coffeImage flex-col items-center justify-center w-full">
 
       {/* Main section */}
-      <section className="max-w-[500px] w-full md:max-w-7xl  bg-[#1B1D1F] z-10 rounded-lg px-4 md:px-16 py-7 text-center flex flex-col items-center ">
-        <div className="relative ">
-          <h1 className="text-3xl md:text-4xl mb-4 z-30">Our Collection</h1>
+      <section className="overflow-hidden max-w-[500px] m-auto w-full lg:max-w-7xl bg-[#1B1D1F] z-10 rounded-lg px-4 md:px-16 py-20 text-center flex flex-col items-center ">
+        <div className="relative">
+          <h1 className=" text-3xl md:text-4xl mb-4 z-30">Our Collection</h1>
           <Image 
             src={'/vector.svg'}
             alt="Vector"
-            width={150}
-            height={150}
-            className="absolute top-2 right-1 -z-10"
+            width={250}
+            height={250}
+            className="absolute -top-10 -right-28 -z-10"
 
           />
         </div>
