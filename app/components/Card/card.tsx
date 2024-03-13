@@ -18,7 +18,7 @@ export const Card = ({
 }: Props) => {
     return (
         <div className="relative">
-
+            {/* Popular tag */}
             {
                 popular && (
                     <p className="py-[2px] px-2 bg-[#F6C768] absolute top-2 left-2 rounded-2xl text-black text-[10px] font-semibold">
@@ -45,9 +45,9 @@ export const Card = ({
                 </p>
             </div>
 
-            {/* Rating and sold out  */}
-
+            
             <div className="w-full flex items-center justify-between mt-2">
+                {/* Rating and Votes */}
                 <div className="flex justify-self-start items-center gap-2">
                     {
                         rating ? (
@@ -67,6 +67,7 @@ export const Card = ({
                         )
                     }
                     
+                    
                     <p className="text-xs">
                         {
                             rating
@@ -75,6 +76,7 @@ export const Card = ({
                     </p>
                 </div>
 
+                {/* Sold out or not */}
                 {
                     !available && (
                         <p className="font-semibold text-[#ED735D] text-[10px]">

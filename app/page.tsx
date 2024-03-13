@@ -1,7 +1,7 @@
 
 
 import Image from "next/image";
-import { CoffeList, Filters } from "./components";
+import { CoffeList, Filters } from "@/app/components";
 
 
 export default async function Home({
@@ -16,7 +16,6 @@ export default async function Home({
 
   return (
     <main className="flex min-h-screen bg-cover py-20 bg-coffeImage flex-col items-center justify-center w-full">
-
       {/* Main section */}
       <section className="overflow-hidden max-w-[500px] m-auto w-full lg:max-w-7xl bg-[#1B1D1F] z-10 rounded-lg px-4 md:px-16 py-20 text-center flex flex-col items-center ">
         <div className="relative">
@@ -31,7 +30,6 @@ export default async function Home({
           />
         </div>
         <p className="text-sm text-[#6F757C] z-10 max-w-[300px] md:max-w-[500px] mb-4">Introducing our Coffee Collection, a selection of unique coffees from different roast types and origins, expertly roasted in small batches and shipped fresh weekly.</p>
-
         {/* Filters */}
         <Filters />
 
@@ -39,7 +37,6 @@ export default async function Home({
         <CoffeList 
           query={searchParams?.query}
         />
-          
       </section>
     </main>
   );

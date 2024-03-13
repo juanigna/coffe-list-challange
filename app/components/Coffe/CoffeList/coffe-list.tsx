@@ -1,7 +1,4 @@
-
-import { Coffe } from "@/types"
-import { Card, Filters } from "../.."
-import { useEffect, useState } from "react";
+import { Card } from "../.."
 import { getCoffesList } from "@/app/utils";
 
 
